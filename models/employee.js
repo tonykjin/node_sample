@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     department: DataTypes.ENUM('HR', 'Admin', 'Accounts')
   }, {});
   Employee.associate = function(models) {
-    // associations can be defined here
+    Employee.belongsToMany(models.Team { through: models.team_members });
   };
   return Employee;
 };

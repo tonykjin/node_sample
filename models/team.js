@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     team_name: DataTypes.STRING
   }, {});
   Team.associate = function(models) {
-    // associations can be defined here
+    Team.belongsToMany(models.Employee { through: models.Employee })
   };
   return Team;
 };

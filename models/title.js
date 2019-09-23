@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     affective_date: DataTypes.DATE
   }, {});
   Title.associate = function(models) {
-    // associations can be defined here
+    Title.belongsTo(models.Employee);
   };
   return Title;
 };

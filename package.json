@@ -1,0 +1,30 @@
+{
+  "name": "node_sample",
+  "version": "1.0.0",
+  "description": "Basic Example a Node.js server (Express), MS SQL Database. Db migrations and connection using Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonykjin/node_sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonykjin/node_sample/issues"
+  },
+  "homepage": "https://github.com/tonykjin/node_sample#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mssql": "^5.1.0",
+    "sequelize": "^5.19.0",
+    "tedious": "^6.4.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}

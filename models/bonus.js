@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     bonus_amount: DataTypes.INTEGER
   }, {});
   Bonus.associate = function(models) {
-    // associations can be defined here
+    Bonus.belongsTo(models.Employee);
   };
   return Bonus;
 };

@@ -7,7 +7,8 @@ module.exports = (sequelize, DataTypes) => {
     priority: DataTypes.ENUM('1', '2', '3', '4', '5')
   }, {});
   Project.associate = function(models) {
-    // associations can be defined here
+    Project.belongsTo(models.Client);
+    Project.belongsTo(models.Team);
   };
   return Project;
 };
